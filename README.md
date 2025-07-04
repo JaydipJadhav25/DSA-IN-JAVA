@@ -1,4 +1,4 @@
-# 📚 DSA Notes - Master Data Structures and Algorithms
+# 📚 DSA Notes 
 
 Welcome to the **DSA Notes Repository** – your one-stop reference for mastering **Data Structures and Algorithms** with clear explanations, real-world applications, and interview-ready concepts.
 
