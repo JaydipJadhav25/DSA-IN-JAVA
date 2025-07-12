@@ -40,6 +40,24 @@ public static void main(String[] args) {
     System.out.println("GST (18%): Rs. " + gst);
     System.out.println("Total with GST: Rs." + total);
 
+    System.out.println("Question 4");
+     int x=12;
+     float v = 12.34f;
+     double h = 12.1233;
+     char s ='s';
+     double out = x+v+h+s;
+     System.out.println(out);
+    //  double type because oftype conversion
+    // java will perform type promotion  , stor least /promote most larg in expression
+
+    System.out.println("Question 5");
+    int $=24;
+    System.out.println("not Error : " + $);
+    // No, the statement will not give any error.
+    // NamesofvariablesarecalledidentifiersinJava.
+    // Identifierrulesays,identifierscanstartwithany alphabet or underscore (“_”) or dollar (“$”).
+    // According to the rule the given variable name is a valid identifier
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 /// 
