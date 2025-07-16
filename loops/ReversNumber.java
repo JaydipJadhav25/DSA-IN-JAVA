@@ -1,7 +1,8 @@
 public class ReversNumber {
   public static void main(String[] args) {
       System.out.println("Revers NUmber");
-      int num =19 ;
+      int num =1534236469;
+    
       int lastNumber = 0;
       int reversNUmber=0;
 
