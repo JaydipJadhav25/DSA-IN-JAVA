@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main{
     public static void main(String[] args) {
@@ -11,8 +11,8 @@ public class Main{
     //     counter++;
     //  }
 
-     Scanner sc = new Scanner(System.in);
-     int input = sc.nextInt();
+    //  Scanner sc = new Scanner(System.in);
+    //  int input = sc.nextInt();
     //  while (counter <= input) {
     //      System.out.println(counter +" to "+ input);
     //     // ++counter;
@@ -23,6 +23,7 @@ public class Main{
     //sun to natural numbers
 //    int sum = 0;
 //    int nNumber= 1;
+   //  int input = sc.nextInt();
 //    while(nNumber <= input){
 //     sum +=nNumber;
 //     System.out.println("number : " + nNumber+" and sum "+sum);
@@ -33,13 +34,41 @@ public class Main{
 
 
 //for loop
-
+for(int i = 1; i<=10; i+=1){
+    System.out.println("i :"+i);
+}
+for(int i = 11; i<=10; i+=1){
+    System.out.println("i :"+i);
+}
 
 //print 
 // ****
 // ****
 // ****
 // ****
+ //simple
+ while (counter <4) {
+    System.out.println("* * * *");
+      counter++;
+ }
+
+
+while (counter <= 4) {
+    int i =0;
+  while (i <=4) {
+    System.out.print(" * ");
+    i++;
+  }
+  System.out.println("");
+  counter++;
+}
+System.out.println("");
+for(int i = 0 ; i <4; i++){
+   for(int j = 0 ; j <4; j++){
+    System.out.print(" * ");
+}
+System.out.println("");
+}
 
 
 }
