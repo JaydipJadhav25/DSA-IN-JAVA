@@ -22,7 +22,7 @@ int main(){
     int n ;
     cin>>n;
     pattern1(n);
-    cout<<".............";
+    
   }
 
     return 0;
