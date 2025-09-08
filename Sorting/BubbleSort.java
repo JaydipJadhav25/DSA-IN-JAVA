@@ -1,6 +1,7 @@
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = { 10, 5 ,4 ,3 ,2, 1};
+        // int[] arr = { 10, 5 ,4 ,3 ,2, 1};
+        int[] arr = { 1 ,2 ,3, 4};
 
         //1./////////////////////////////////////////////////
         //outer loop
@@ -29,16 +30,39 @@ public class BubbleSort {
 
         //2 ./////////////////////////////////////
         //outer loop
-        for(int i = 0 ; i<arr.length-1; i++){
+        // for(int i = 0 ; i<arr.length-1; i++){
+        //     //inner loop
+        //     for(int j =0; j<arr.length-1-i; j++){
+        //         //chekc
+        //         if(arr[j] >arr[j+1]){
+        //             //swap
+        //         int temp = arr[j];
+        //          arr[j] = arr[j+1];
+        //          arr[j+1] = temp;
+        //         }
+        //     }
+        // }
+
+
+
+        //3 array already sorted
+             for(int i = 0 ; i<arr.length-1; i++){
             //inner loop
+            int sop = 0;
             for(int j =0; j<arr.length-1-i; j++){
                 //chekc
                 if(arr[j] >arr[j+1]){
                     //swap
+                    sop++;
                 int temp = arr[j];
                  arr[j] = arr[j+1];
                  arr[j+1] = temp;
                 }
+
+            }
+            if(sop ==0){
+                System.out.println("array already sorted!");
+                break;
             }
         }
     
