@@ -17,17 +17,32 @@ public class CountingSort {
       for(int i =0 ; i<arr.length ; i++){
         //update in cout
         count[arr[i]]++;
-      } 
-        //loop to storting in main aray
-        int j =0 ;
-          for(int i =0 ; i<count.length ; i++){
-            while (count[i] > 0) {
+      };
+
+        //loop to storting in main aray => accessding order
+        // int j =0 ;
+        //   for(int i =0 ; i<count.length ; i++){
+        //     while (count[i] > 0) {
+        //         arr[j] =i;
+        //         j++;
+        //         count[i]--;//drecess
+        //     }
+
+        //   }
+
+
+
+          //decending order
+           int j =0;
+          for(int i = count.length-1; i>=0 ; i--){
+            // System.out.println(i +" "+count[i]);
+             while (count[i] > 0) {
                 arr[j] =i;
                 j++;
                 count[i]--;//drecess
             }
-
           }
+
 
       
 
