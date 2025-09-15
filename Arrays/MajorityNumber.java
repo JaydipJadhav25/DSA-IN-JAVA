@@ -100,6 +100,7 @@ public class MajorityNumber {
         // store frequencies
         for (int i = 0; i < n; i++) {
             mapArray.merge(arr[i], 1, Integer::sum);
+            
         }
 
         int maxFreq = 0;
