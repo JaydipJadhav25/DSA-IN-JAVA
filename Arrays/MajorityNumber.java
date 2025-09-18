@@ -121,7 +121,7 @@ public class MajorityNumber {
         int[] arr = new int[]{2, 3, 9,2 ,2 ,2 ,1};
         System.out.println("finde mejority : "+findMajority(arr, arr.length));
         //  int[] data = {1, 2, 3, 2, 2, 5, 1, 1, 1};
-         int[] data = {1 ,2 ,3};
+         int[] data = { 3, 4 , 1 ,2 , 4 };
         System.out.println(findMostFrequent(data, data.length)); // Output: 1
        
     }
