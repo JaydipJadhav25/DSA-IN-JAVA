@@ -64,11 +64,8 @@ public class SunArrays {
                 max = hash[i];
                 index = i;
             }
-         }
+         } 
          System.out.println("largest array idx :" + index +"and addition is largest: "+ max);
-
-          
-
 
     }
      
