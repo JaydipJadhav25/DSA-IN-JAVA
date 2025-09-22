@@ -3,20 +3,20 @@ public class BasicArrays{
         
 
         //declaration of an array
-       int marks[] = new int[30];   // C/C++ style
-       int[] marks1 = new int[30];   // Java style (preferred);
+      // int marks[] = new int[30];   // C/C++ style
+      // int[] marks1 = new int[30];   // Java style (preferred);
 
        //Consistency with multiple declarations
         // both marks and scores are int[] arrays
-        int[] marks2, scores;
-        marks2 = new int[3];
-        scores = new int[2];
+        // int[] marks2, scores;
+        // marks2 = new int[3];
+        // scores = new int[2];
         
         //defind this valuse
         int age[] = {20, 22, 21, 23}; //c style
-        int[] age2 = {20, 22, 21, 23};//java style
+       // int[] age2 = {20, 22, 21, 23};//java style
 
-        int[] age3 = new int[]{20, 22, 21, 23};
+        // int[] age3 = new int[]{20, 22, 21, 23};
 
 
 
