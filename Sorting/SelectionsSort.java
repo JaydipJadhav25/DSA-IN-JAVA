@@ -1,6 +1,8 @@
 public class SelectionsSort{
     public static void main(String[] args) {
-    int[] number = {5 ,4 ,3 ,2,1};
+    int[] number = { 1,2,4,7,7,5,5,6};
+        // int[] arr = { 1,2,4,7,7,5,5,6};
+
     
 
     //outer loop
