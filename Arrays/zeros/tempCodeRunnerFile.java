@@ -1,1 +1,0 @@
-0; i<arr.length ; i++){
