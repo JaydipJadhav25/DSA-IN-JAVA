@@ -6,22 +6,40 @@ public class FindMissingvalue {
         int n = 5;
 
         //1.brute force
-        for(int i =1 ; i<=n ; i++){
-            //inner loop
-            int flag = 0;
-            for(int j=0 ; j<arr.length ; j++){
-                //check
-                if(arr[j] == i){
-                    flag = 1;
-                    break;
-                }
-            }
-            //check flag
-            //if flag is 0 that means current element is not in array
-                if(flag == 0){
-                    System.out.println("this is missing value is array : "+ i);
-                    break;
-                }
+        // for(int i =1 ; i<=n ; i++){
+        //     //inner loop
+        //     int flag = 0;
+        //     for(int j=0 ; j<arr.length ; j++){
+        //         //check
+        //         if(arr[j] == i){
+        //             flag = 1;
+        //             break;
+        //         }
+        //     }
+        //     //check flag
+        //     //if flag is 0 that means current element is not in array
+        //         if(flag == 0){
+        //             System.out.println("this is missing value is array : "+ i);
+        //             break;
+        //         } 
+        // }
+
+        //2.better solution
+        int[] hash = new int[n+1];
+
+        for(int i =0 ; i<arr.length ; i++){
+            //mark in hash array
+            hash[arr[i]] =1;
         }
+
+        //re-itrasion of array
+        for(int i=1 ; i<n ; i++){
+            //check
+            if(hash[i] == 0){
+                System.out.println("missing element is : "+ i);
+                break;
+            }
+        }
+        
     }
 }
