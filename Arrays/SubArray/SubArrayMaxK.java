@@ -30,5 +30,9 @@ public class SubArrayMaxK {
         System.out.println("Final Map of Prefix Sum Frequencies: " + map);
         System.out.println("Number of subarrays with sum " + k + ": " + count);
 
+
+
+        
     }
 }
+
