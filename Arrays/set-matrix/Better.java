@@ -49,7 +49,7 @@ for (int i = 0; i < row.length; i++) {
 
 //2 . update zeros as depent on row and col
 for (int i = 0; i < row.length; i++) {
-    for (int j = 0; j < row.length; j++) {
+    for (int j = 0; j < col.length; j++) {
         if(row[i] == 1 || col[j]==1){
          //make as zero
          matrix[i][j] = 0;
