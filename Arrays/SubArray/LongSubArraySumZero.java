@@ -16,7 +16,6 @@ public class LongSubArraySumZero {
         //use hash map
         HashMap<Integer , Integer> hash = new HashMap<Integer , Integer>();
 
-
         //loop to calcaulate some and find len
         int len = 0;
         int sun = 0;

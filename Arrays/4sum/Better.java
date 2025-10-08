@@ -1,4 +1,4 @@
-package 4sum;
+// package 4sum;
 
 public class Better {
         public List<List<Integer>> fourSum(int[] nums, int target) {
