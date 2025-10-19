@@ -33,6 +33,7 @@ public class Better {
             // big--;
             // small++; //no need to check beacue alreay in sorted arrays
             break;
+
         }
         
     }
