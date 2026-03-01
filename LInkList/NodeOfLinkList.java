@@ -3,6 +3,10 @@ public class NodeOfLinkList {
         int val;
         Node next;
     }
+    
+     static Node head;
+     static Node tail;
+
     public static void main(String[] args) {
         
         Node a = new Node(); 
@@ -24,5 +28,24 @@ public class NodeOfLinkList {
         c.next = d;
         d.next = e;
         e.next = null;
+
+        //point head to first node
+        head = a;
+        //point to tail to last
+        tail = e;
+
+        System.out.println(head.val);
+        System.out.println(head.next.val);
+        System.out.println(tail.val);
+         
+        //node 
+        Node temp = a; //a return refers / look like node that why take Node
+        while (temp != null) {
+            System.out.println(temp.val);
+            temp  = temp.next;
+        }
+
+
+
     }
 }
