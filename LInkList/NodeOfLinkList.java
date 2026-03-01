@@ -1,7 +1,13 @@
 public class NodeOfLinkList {
     static class Node{
         int val;
-        Node next;
+        Node next; //by defult hold Null addresss
+        
+        Node(int val){
+        this.val = val;
+        this.next = null;//intail node not ponit any one
+        }
+
     }
     
      static Node head;
@@ -9,41 +15,68 @@ public class NodeOfLinkList {
 
     public static void main(String[] args) {
         
-        Node a = new Node(); 
-        Node b = new Node(); 
-        Node c = new Node(); 
-        Node d = new Node(); 
-        Node e = new Node(); 
-         
-        //value of nodes
-        a.val = 10;
-        b.val = 20;
-        c.val = 30;
-        d.val = 40;
-        e.val = 50;
+        Node a = new Node(10); 
+        Node b = new Node(20); 
+        Node c = new Node(30); 
+        Node d = new Node(40); 
+        Node e = new Node(50); 
 
-        //next of Node
+
+
+        System.out.println(a.val);
+        System.out.println(b.val);
+        System.out.println(c.val);
+        System.out.println(d.val);
+        System.out.println(e.val);
+
+
+        System.out.println("..............................");
+
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+
+        System.out.println("..............................");
+       
+        //liks
         a.next = b;
         b.next = c;
         c.next = d;
         d.next = e;
-        e.next = null;
 
-        //point head to first node
-        head = a;
-        //point to tail to last
-        tail = e;
 
-        System.out.println(head.val);
-        System.out.println(head.next.val);
-        System.out.println(tail.val);
-         
-        //node 
-        Node temp = a; //a return refers / look like node that why take Node
+        System.out.println(a.next);
+        System.out.println(b.next);
+        System.out.println(c.next);
+        System.out.println(d.next);
+        System.out.println(e.next);
+
+
+        System.out.println(".....................");
+
+        System.out.println(a.next.next.next.next);
+        System.out.println(a.next.next.next.next.val);
+        System.out.println(a.next.next.next.next.next);
+
+        System.out.println("........................");
+
+
+
+        //loop
+        System.out.println("Loop..");
+        Node temp = a;
+        a.val = 100;
+        
         while (temp != null) {
             System.out.println(temp.val);
-            temp  = temp.next;
+            temp = temp.next;
         }
+
+         
+   
 
 
 
