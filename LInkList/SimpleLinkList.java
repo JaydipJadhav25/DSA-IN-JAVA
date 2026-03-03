@@ -1,5 +1,4 @@
 
-
 class Node {
 
     int val;
@@ -33,18 +32,49 @@ public class SimpleLinkList {
 
     }
 
-    
-     public static Node displayNodeByRec(Node head){
-        //base condition
+    public static void displayNodeByRec(Node head) {
+        // base condition
         if (head == null) {
             System.out.print("null");
-            return null;
+            return;
         }
 
+        displayNodeByRec(head.next);
         System.out.print(head.val + " =||=>> ");
 
-        return displayNodeByRec(head.next);
-     }
+    }
+
+    public static int getValFromIndex(Node head, int index) {
+        Node temp = head;
+                 ///szero ase indexing
+        //loop
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+      
+
+        return temp == null ? -1 : temp.val;
+
+    }
+
+
+
+    public static int getIndexOfNode(Node head, int target) {
+        int index = 0;
+        Node temp = head;
+        // looop
+        while (temp != null) {
+            // check
+            if (temp.val == target) {
+                return index;
+            }
+            index += 1;
+            temp = temp.next;
+        }
+
+        return -1;
+
+    }
 
 
     public static void main(String[] args) {
@@ -63,11 +93,18 @@ public class SimpleLinkList {
         d.next = e;
 
         // display nodes
-        //loops
+        // loops
         // displayLinkList(a);
 
-        //recursive
-        displayNodeByRec(a);
+        // recursive
+        // displayNodeByRec(a);
+
+        System.out.println();
+
+        // get node index
+        System.out.println(getIndexOfNode(a, 20));
+
+        System.out.println(getValFromIndex(a, 9));
 
     }
 }
