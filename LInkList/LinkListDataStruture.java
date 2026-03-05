@@ -218,8 +218,40 @@ class Linklist {
        }
 
         return -1;
+    };
+
+
+
+    //get middle of link list 
+   public int getMiddleNode(){
+    Node temp = this.head;
+    int total = 0;
+    while (temp != null) {
+        temp = temp.next;
+        total++;
+    };
+
+    System.out.println("total : " + total);
+
+    //now  check even or odd
+    // int mid = total % 2 == 0 ? total/2 : (total/2)+1;
+    //zero based index
+    int mid = total /2;
+      temp = this.head;
+    //loop
+    for (int i = 0; i < mid; i++) {
+       temp  = temp.next;
     }
+
+    return temp.val;
+
+   }
+
+    
+
+
 }
+
 
 public class LinkListDataStruture {
 
@@ -283,6 +315,11 @@ public class LinkListDataStruture {
         ll.deleteAtIndexInLinkList(1);
 
         ll.printLinkList();
+
+        System.out.println(5/2);
+
+        System.out.println("get middle node : " + ll.getMiddleNode());
+    
 
     }
 
