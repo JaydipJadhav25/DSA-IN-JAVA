@@ -4,6 +4,7 @@ public class StringCompresion{
     public static void main(String[] x){
         Scanner sc = new Scanner(System.in);
          String input = sc.nextLine();
+         String result = "";
         
          //define var
          int count = 1;
@@ -16,7 +17,14 @@ public class StringCompresion{
 
              if(letter != input.charAt(i)){
               //print all past data
-               System.out.print(letter+""+ count);
+            //    System.out.print(letter+""+ count);
+            //add  in string
+             if(count > 1){
+                 result  = result+letter+count;
+             }else{
+                result  = result+letter;
+             }
+
                 //update with current latter
                 letter = input.charAt(i);
                  count = 1; 
@@ -26,7 +34,14 @@ public class StringCompresion{
               }
          }
           //for last letter
-               System.out.print(letter+""+ count);
+            //    System.out.print(letter+""+ count);
+           if(count > 1){
+              result  = result+letter+count;
+           }else{
+            result  = result+letter;
+           }
+
+               System.out.print(result);
 
         
     }
